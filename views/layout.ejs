@@ -2,10 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
     <head>
         <meta charset="utf-8" />
-        <title></title>
+        <title>บริษัท ซีดีจี ซิสเต็มส์ จำกัด</title>
         <link href="../../stylesheets/bootstrap.min.css" rel="stylesheet" />
+        
+        <link href="../stylesheets/fonts/glyphicons-halflings-regular.ttf" rel="stylesheet" />
+        <link href="../stylesheets/fonts/glyphicons-halflings-regular.woff" rel="stylesheet" />
+        <link href="../stylesheets/fonts/glyphicons-halflings-regular.woff2" rel="stylesheet" />
+        
         <script src="../../javascripts/jquery-2.1.4.min.js"></script>
         <script src="../../javascripts/bootstrap.min.js"></script>
+        
+        
     </head>
     <body>
         <nav class="navbar navbar-default">
@@ -18,28 +25,79 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Brand</a>
+              <a class="navbar-brand" href="#">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
+                  
+                <!--ตารางรหัส-->
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ตารางรหัส<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="/createProduct">Create Product</a></li>
-                    <li><a href="/viewProduct">View Product</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="/createProduct">ตารางรหัสคำนำหน้า</a></li>
+                    <li><a href="/viewProduct">ตารางรหัสมหาวิทยาลัย</a></li>
+                    <li><a href="#">ตารางรหัสคณะ/ภาควิชา</a></li>
+                    <li><a href="#">ตารางรหัสสาขาวิชาเอก</a></li>
+                    <li><a href="#">ตารางรหัสประเภทคะแนน</a></li>
+                    <li><a href="#">ตารางรหัสกิจกรรม</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
+                  
+                <!--รายงาน-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">รายงาน<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/createProduct">รายงานผู้เข้าฟัง Overview</a></li>
+                    <li><a href="/viewProduct">รายงานผู้มีสิทธิ์สอบสัมภาษณ์</a></li>
+                    <li><a href="#">รายงานผู้มีสิทธิ์อบรม</a></li>
+                    <li><a href="#">รายงานผู้ได้รับทุนโครงการ</a></li>
+                    <li><a href="#">รายงานรายชื่อผู้เข้าสมัครโครงการ</a></li>
+                    <li><a href="#">รายงานรายชื่อผู้เข้าร่วมกิจกรรม</a></li>
+                    <li><a href="#">รายงานผู้เข้าร่วมโคงการ (รายบุคคล)</a></li>
+                    <li role="separator" class="divider"></li>
+                  </ul>
+                </li>
+                  
+                <!--ลงทะเบียน-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ลงทะเบียน<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/createProduct">ลงทะเบียน/แก้ไขประวัติ</a></li>
+                    <li><a href="/viewProduct">ลืมรหัสผ่าน</a></li>
+                  </ul>
+                </li>
+                  
+                <!--SrsAdmin-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SrsAdmin<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/createProduct">สร้างโครงการ</a></li>
+                    <li><a href="/viewProduct">ส่ง E-mail</a></li>
+                    <li><a href="#">บันทึกผู้เข้าร่วมกิจกรรม</a></li>
+                    <li><a href="#">บันทึกคะแนน</a></li>
+                    <li><a href="#">บันทึกคัดเลือกผู้ผ่านเกณฑ์</a></li>
+                    <li><a href="#">บันทึกผู้สละสิทธิ์</a></li>
+                    <li><a href="#">บันทึก E-mail Pattern</a></li>
+                    <li role="separator" class="divider"></li>
+                  </ul>
+                </li>
+                
+                <!--ผู้เข้าร่วมโครงการ-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ผู้เข้าร่วมโครงการ<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/createProduct">ลงทะเบียน/แก้ไขประวัติ</a></li>
+                    <li><a href="/viewProduct">ยืนยันการเข้าร่วมกิจกรรม</a></li>
+                  </ul>
+                </li>
+
+                
               </ul>
                 
+                <!--ค้นหา-->    
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
@@ -47,30 +105,10 @@
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
                 
+                
               <ul class="nav navbar-nav navbar-right">
                   
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/searchProduct">Search Product </a></li>
-                    <li><a href="/searchProductCategory">Search Product Category</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                  </ul>
-                </li> 
-                  
-                <li><a href="#">Link</a></li>
-                  
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product Category <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/createProductCategory">Create Product Category</a></li>
-                    <li><a href="/viewProductCategory">View Product Category</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
+                
                   
               </ul>
                 
